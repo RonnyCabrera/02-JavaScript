@@ -1,7 +1,7 @@
-let nombre: string = 'Adrian';
-nombre = 'Vicente';
-const cedula = '1718137159';
-// cedula = '132123121123'; No hay como
+let nombre: string = 'Ronny';
+nombre = 'Cabrera';
+const cedula = '1723026995';
+// cedula = '17230265592'; No hay como
 let apellido: any = 'Eguez'; // duck Typing
 apellido = 1;
 apellido = {};
@@ -11,7 +11,7 @@ let casado: boolean = false;
 let fechaNacimiento: Date = new Date();
 
 let usuario = {
-    nombre: 'Adrian',
+    nombre: 'Ronny',
     edad: 28
 };
 
@@ -32,8 +32,8 @@ class Usuario {
 
 }
 
-let adrian = new Usuario('Adrian', 28);
-console.log(adrian.imprimirUsuario('Hola!'));
+let ronny = new Usuario('Ronny', 23);
+console.log(ronny.imprimirUsuario('Hola!'));
 
 //console.log(usuario);
 class UsuarioDos {
@@ -55,10 +55,10 @@ class UsuarioDos {
 }
 
 
-let vicente = new UsuarioDos('Vicente', 28);
-console.log('vicente', vicente);
+let cabrera = new UsuarioDos('Cabrera', 23);
+console.log('Cabrera', cabrera);
 
-vicente.edad = 23;
+cabrera.edad = 20;
 
 interface UsuarioTres {
     nombre: string;
@@ -67,7 +67,7 @@ interface UsuarioTres {
 }
 
 let carlos: UsuarioTres = {
-    nombre: 'Carlos',
+    nombre: 'Santiago',
     edad: 18,
-    esposa: new Usuario('Carla',19)
+    esposa: new Usuario('Eli',19)
 };

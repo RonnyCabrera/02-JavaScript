@@ -1,7 +1,7 @@
-var nombre = 'Adrian';
-nombre = 'Vicente';
-var cedula = '1718137159';
-// cedula = '132123121123'; No hay como
+var nombre = 'Ronny';
+nombre = 'Cabrera';
+var cedula = '1723026995';
+// cedula = '17230265592'; No hay como
 var apellido = 'Eguez'; // duck Typing
 apellido = 1;
 apellido = {};
@@ -9,7 +9,7 @@ var edad = 1;
 var casado = false;
 var fechaNacimiento = new Date();
 var usuario = {
-    nombre: 'Adrian',
+    nombre: 'Ronny',
     edad: 28
 };
 var Usuario = /** @class */ (function () {
@@ -23,8 +23,8 @@ var Usuario = /** @class */ (function () {
     };
     return Usuario;
 }());
-var adrian = new Usuario('Adrian', 28);
-console.log(adrian.imprimirUsuario('Hola!'));
+var ronny = new Usuario('Ronny', 23);
+console.log(ronny.imprimirUsuario('Hola!'));
 //console.log(usuario);
 var UsuarioDos = /** @class */ (function () {
     function UsuarioDos(nombre, _edad, esposo) {
@@ -45,11 +45,11 @@ var UsuarioDos = /** @class */ (function () {
     });
     return UsuarioDos;
 }());
-var vicente = new UsuarioDos('Vicente', 28);
-console.log('vicente', vicente);
-vicente.edad = 23;
+var cabrera = new UsuarioDos('Cabrera', 23);
+console.log('Cabrera', cabrera);
+cabrera.edad = 20;
 var carlos = {
-    nombre: 'Carlos',
+    nombre: 'Santiago',
     edad: 18,
-    esposa: new Usuario('Carla', 19)
+    esposa: new Usuario('Eli', 19)
 };
